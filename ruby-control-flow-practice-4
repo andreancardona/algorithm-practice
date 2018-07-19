@@ -1,0 +1,24 @@
+#example 1
+a = 10
+b = 11
+if a < b
+  print "a is less than b!"
+elsif b < a
+  print "b is less than a!"
+else
+  print "b is equal to a!"
+end
+
+#example 2
+problem = false
+print "Good to go!" unless problem
+
+#example 3
+test_1 should be false
+test_1 = 3>4
+
+test_2 = should be false
+test_2 = 8==10
+
+test_3 = should be true
+test_3 = 8!=10
