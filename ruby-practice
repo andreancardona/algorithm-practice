@@ -1,0 +1,17 @@
+cheese = "manchegoo"
+puts cheese.length
+
+//simple methods
+my_name = "andrea"
+puts my_name.reverse
+
+upcase_name = "andrea"
+puts upcase_name.upcase
+downcase_name = "CARDONA"
+puts downcase_name.downcase
+
+# I'm a full line comment!
+puts "Andrea".length # I'm a comment, too!
+
+name = "Andrea"
+puts name.downcase.reverse.upcase
