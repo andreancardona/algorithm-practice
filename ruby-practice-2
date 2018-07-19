@@ -1,0 +1,15 @@
+print "What's your first name?"
+first_name = gets.chomp.capitalize!
+
+print "What's your last name?"
+last_name = gets.chomp.capitalize!
+
+print "What city are you from?"
+city = gets.chomp.capitalize!
+
+print "Please provide the initial for the state in which you are from?"
+state = gets.chomp.upcase!
+
+monkey = "Curious George"
+
+puts "#{first_name} took #{monkey} to the zoo"
