@@ -1,0 +1,41 @@
+#example 1
+print "What is your integer of choice: "
+user_num = Integer(gets.chomp)
+
+if user_num < 0
+  puts "You picked a negative integer!"
+elsif user_num > 0
+  puts "You picked a positive integer!"
+else
+  puts "You picked zero!"
+end
+
+#example 2
+
+hungry = false
+
+unless hungry
+  puts "I'm writing Ruby programs!"
+else
+  puts "Time to eat!"
+end
+
+#example 3
+  boolean_1 = 77 < 78 && 77 < 77
+  boolean_1 = false
+
+  boolean_2 = true && 100 >= 100
+  boolean_2 = true
+
+  boolean_3 = 2**3 == 8 && 3**2 == 9
+  boolean_3 = true
+
+#example 4
+  boolean_1 = 2**3 != 3**2 || true
+  boolean_1 = true
+
+  boolean_2 = false || -10 > -9
+  boolean_2 = true
+
+  boolean_3 = false || false
+  boolean_3 = false
