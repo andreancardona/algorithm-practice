@@ -1,0 +1,56 @@
+const map = { a: 1, b: 1, c: 1, d: 2, e: 2, f: 2, g: 3, h: 3, i: 3, j: 4, k: 4, l: 4, m: 5, n: 5, o: 5, p: 6, q: 6, r: 6, s: 6, t: 7, u: 7, v: 7, w: 8, x: 8, y: 8, z: 8 }
+
+function convertWordIntoCode(word){
+	let split = word.split('')
+	let arr = split.map(char => {
+		return map[char]
+	})
+	return arr
+}
+
+function cleanPhoneNumber(number){
+	let replaced = number.replace(/-/g,'')
+	replaced = replaced.split('')
+	return replaced.map(i => parseInt(i))
+}
+
+
+function createFrequency(arr){
+	var frequency = Array(10).fill(0)
+	arr.forEach(number => {
+		if (frequency[number]){
+			frequency[number]++
+		} else {
+		frequency[number] = 1
+		}
+		return arr
+	})
+	return frequency
+}
+
+function isInside(word, frequency){
+	var frequency = frequency.slice()
+	for (var i = 0; i < word.length; i++) {
+		digit = word[i]
+		frequency[digit]--
+		if (frequency[digit] < 0){
+			return false
+		}
+	}
+	return true
+}
+
+const number = '1-123-123-421'
+const words = ['deaf','cat','andreaaaaamnm']
+
+const cleanedNumber = cleanPhoneNumber(number)
+const frequency = createFrequency(cleanedNumber)
+words.forEach(word => {
+	const code = convertWordIntoCode(word)
+	const inside = isInside(code,frequency)
+	if (inside){
+		console.log(word + ' is inside')
+	} else {
+		console.log(word + ' is not inside')
+	}
+})
