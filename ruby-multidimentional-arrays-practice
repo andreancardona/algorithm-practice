@@ -1,0 +1,15 @@
+my_hash = {
+  "apple" => 0.52,
+  "banana" => 0.23,
+  "kiwi" => 1.42
+}
+
+lunch_order = {
+  "Ryan" => "wonton soup",
+  "Eric" => "hamburger",
+  "Jimmy" => "sandwich",
+  "Sasha" => "salad",
+  "Cole" => "taco"
+}
+
+lunch_order.each { |x, y| puts y }
