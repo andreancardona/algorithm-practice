@@ -1,0 +1,18 @@
+languages = ["HTML", "CSS", "JavaScript", "Python", "Ruby"]
+
+languages.each { |element| puts element }
+
+s = [["ham", "swiss"], ["turkey", "cheddar"], ["roast beef", "gruyere"]]
+
+s.each { |sub_array| sub_array.each { |element| puts element }}
+
+secret_identities = {
+  "The Batman" => "Bruce Wayne",
+  "Superman" => "Clark Kent",
+  "Wonder Woman" => "Diana Prince",
+  "Freakazoid" => "Dexter Douglas"
+}
+
+secret_identities.each do |superhero_name, real_name|
+  puts "#{superhero_name}: #{real_name}"
+end
